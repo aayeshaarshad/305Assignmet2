@@ -44,7 +44,7 @@ class CameraWidget extends StatelessWidget {
           ),
           Center(
             child: ElevatedButton(
-                child: Text('Read localy Data'),
+                child: Text('Read local Data'),
                 onPressed: () {
                   Navigator.push(
                     context,

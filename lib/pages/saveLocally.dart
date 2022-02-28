@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:geolocator/geolocator.dart' as geo;
-import 'package:path/path.dart';
 
 import 'dart:io';
 import 'dart:async';
@@ -92,7 +90,7 @@ class MyCustomFormState extends State<MyCustomForm> {
                   // If the form is valid, display a snackbar. In the real world,
                   // you'd often call a server or save the information in a database.
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Data Saved')),
+                    const SnackBar(content: Text('Saved!')),
                   );
                   //Navigator.pop(context, true);
                 }

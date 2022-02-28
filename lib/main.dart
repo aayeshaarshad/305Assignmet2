@@ -144,6 +144,9 @@ class _homePageState extends State<homePage> {
   );
 
   void uploadTiwtter() async {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Uploading to Twitter')),
+    );
     File media = File(_imageFileList!.elementAt(0).path);
     final List<int> mediaBytes = media.readAsBytesSync();
     final int totalBytes = mediaBytes.length;
@@ -208,6 +211,9 @@ class _homePageState extends State<homePage> {
       long: myLocation.longitude,
     );
     print('uploaded to twitter');
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Uploaded!')),
+    );
   }
 
   void saveLocal() async {}
