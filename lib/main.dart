@@ -134,38 +134,6 @@ class _homePageState extends State<homePage> {
     });
   }
 
-  // Widget _previewImages() {
-  //   final Text? retrieveError = _getRetrieveErrorWidget();
-  //   if (retrieveError != null) {
-  //     return retrieveError;
-  //   }
-  //   if (_imageFileList != null) {
-  //     return ElevatedButton(
-  //       child: Text('Upload to Twitter'),
-  //       onPressed: upload,
-  //     );
-  //   } else if (_pickImageError != null) {
-  //     return Text(
-  //       'Pick image error: $_pickImageError',
-  //       textAlign: TextAlign.center,
-  //     );
-  //   } else {
-  //     return const Text(
-  //       '',
-  //       textAlign: TextAlign.center,
-  //     );
-  //   }
-  // }
-
-  // Text? _getRetrieveErrorWidget() {
-  //   if (_retrieveDataError != null) {
-  //     final Text result = Text(_retrieveDataError!);
-  //     _retrieveDataError = null;
-  //     return result;
-  //   }
-  //   return null;
-  // }
-
   final twitterApi = twitter.TwitterApi(
     client: twitter.TwitterClient(
       consumerKey: 'ScMzVsJnQPcRPYaNFbh7vYfLQ',
