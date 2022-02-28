@@ -45,7 +45,7 @@ class _ListViewHomeState extends State<ListViewHome> {
                       child: ListTile(
                     title: Text(projectSnap.data![index]![1]),
                     subtitle: Text(
-                        'Latitite: ${projectSnap.data![index]![2]} , Longititue: ${projectSnap.data![index]![3]}'),
+                        'Latitude: ${projectSnap.data![index]![2]} , Longitude: ${projectSnap.data![index]![3]}'),
                     leading: CircleAvatar(
                         backgroundImage: AssetImage(
                       projectSnap.data![index]![0],
